@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/txtAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/imgViewCompass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAngle"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/descriptionImg"
+        android:src="@drawable/flecha" />
+    
+	<LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resultadosGPS"
+        android:layout_alignParentLeft="true"
+        android:background="#f2f2ff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/buttons_container1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_button1" />
+
+            <TextView
+                android:id="@+id/txtLatitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/text_txtLatitud" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons_container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_button2" />
+
+            <TextView
+                android:id="@+id/txtLongitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/text_txtLongitud" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultadosGPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#f2f2aa"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/text_resultadosGPS" />
+    
+</RelativeLayout>

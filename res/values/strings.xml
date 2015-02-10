@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gpsvoz</string>
+    <string name="optionLicencia">Licencia</string>
+    <string name="optionCodigo">Código fuente</string>
+    <string name="optionAyuda">Acerca de</string>
+    <string name="text_button1">Latitud</string>
+    <string name="text_button2">Longitud</string>
+    <string name="text_txtLatitud">(0.0) Introducir dato por voz</string>
+    <string name="text_txtLongitud">(0.0) Introducir dato por voz</string>
+    <string name="text_resultadosGPS">(GPS)</string>
+    <string name="descriptionImg">ImageView</string>
+    
+</resources>
